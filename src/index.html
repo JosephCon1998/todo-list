@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        ToDo List
+        <button id="add-note-btn">add note</button>
+        <button id="add-project-btn">add project</button>
+        <select id="project-select">
+          
+        </select>
+      </nav>
+    </header>
+    <dialog id="addToDoDialog">
+      <form>
+          <label for="title">Title:</label>
+          <input type="text" id="title-input" for="'title"></input>
+          <br>
+          <label for="description">Description:</label>
+          <input type="text" id="description-input" for='description'></input>
+          <br>
+          <label for="dueDate">Due Date:</label>
+          <input type="text" id="dueDate-input" for="dueDate"></input>
+          <br>
+          <fieldset>
+            <legend>Choose a priority level</legend>
+          <label for="priority">High</label>
+          <input type="radio" id="high-priority" value="high" name="priority">
+          <label for="priority">Medium</label>
+          <input type="radio" id="medium-priority" value="medium" name="priority">
+          <label for="priority">Low</label>
+          <input type="radio" id="low-priority" value="low" name="priority">
+        </fieldset>
+        <br>
+        <div>
+          <button value="cancel" formmethod="dialog">Cancel</button>
+          <button id="confirm-btn-todo" value="default">Submit ToDo</button>
+        </div>
+      </form>
+    </dialog>
+    <div id="container"></div>
+  </body>
+</html>

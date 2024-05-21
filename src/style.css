@@ -1,0 +1,48 @@
+#header {
+  justify-content: center;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.center-div-main-page {
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  margin-top: 25px;
+}
+
+.default-header {
+  text-align: center;
+}
+
+.todo-containers {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #5b5b5b;
+  width: 400px;
+  max-height: 50px;
+  margin-left: 50px;
+  /* background-color: darkgray; */
+}
+.todo-containers:hover {
+  background-color: darkgrey;
+}
+
+.todo-item {
+  width: 100px;
+}
+.todo-item-description {
+  width: 250px;
+}
+
+.todo-containers.expand {
+  height: 175px;
+  flex-wrap: wrap;
+}
