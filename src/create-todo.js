@@ -23,6 +23,7 @@ const newTitle = addToDoDialog.querySelector("#title-input");
 const newDescription = addToDoDialog.querySelector("#description-input");
 const newDueDate = addToDoDialog.querySelector("#dueDate-input");
 let priorityValue = "low";
+
 //This function checks the priority that the user selects. Defaulted to low, this finds the checked radio button on the submit form
 function getSelectedPriority() {
   const selectedPriority = addToDoDialog.querySelector(
